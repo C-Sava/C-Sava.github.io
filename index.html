@@ -1,146 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Web Page Layout Trial</title>
-
-		<script type="text/javascript">
-		var index = 0;
-		var imgArray = new Array();
-
-			imgArray[0] = new Image();
-			imgArray[0].src = 'images/placeholder1.gif';
-
-			imgArray[1] = new Image();
-			imgArray[1].src = 'images/placeholder2.gif';
-
-			imgArray[2] = new Image();
-			imgArray[2].src = 'images/placeholder3.gif';
-
-		setInterval(function imgBanner(){
-			if(index<3){
-				document.getElementById('adBanner').src = imgArray[index].src;
-				index++;
-				return;
-			} else{
-				index=0;
-			}
-		}, 5000);
-		</script>
-
-		<style>
-			html, body, *{
-				box-sizing: border-box;
-				font-family: sans-serif;
-			}
-			html, body{
-				/*height: 100%;*/
-				padding: 0;
-				margin: 0;
-
-				background-color: grey;
-			}
-			#topBar{
-				height: 11%;
-				width: 100%;
-				background-color: grey;
-
-				text-align: center;
-				margin: 0 auto 0px auto;
-				padding-bottom: 5px;
-				position: relative;
-			}
-			#topBar p{
-				display: inline-block;
-				padding-right: 10px;
-			}
-
-			.displayCont{
-				float: right;
-			}
-			
-			/*Left Side Menu Bar*/
-			#leftMenu{
-				width: 15%;
-				height: 85%;
-				padding-left: 15px;
-				background-color: purple;
-			}
-			#leftMenu h2{
-				text-align: center;
-			}
-			#leftMenu p{
-				line-height: 10px;
-				font-size: 1.25em;
-				padding-left: 20px;
-			}
-			
-			/*Main Content*/
-			#mainCont{
-				width: 55%;
-				padding-left: 5px;
-				/*padding-top: 20px;*/
-			}
-			#mainCont *{
-				margin: 0 auto;
-			}
-			#contentWrap{
-				width: 75%;
-				padding: 10px 5px;
-				/*background-color: rgba(211,211,211,1);*/
-			}
-			
-			/*Right Info Bar*/
-			#rightBar{
-				width: 30%;
-				overflow: hidden;
-				padding-right: 15px;
-			}
-			
-			/*Footer*/
-			#footer{
-				width: 100%;
-				background-color: grey;
-				margin: 0 auto;
-				text-align: center;
-				clear: both;
-			}
-		</style>
+		<title>Index Page</title>
+		<link href="mainpg.css" type="text/css">
 	</head>
-	<body onload="imgBanner()" style="background-color:rgba(211,211,211,0.75);">
-		<div id="topBar">
-			<h1>Title Here</h1>
-
-			<p><a href="">Link One</a> &nbsp;&nbsp; <a href="">Link Two</a> &nbsp;&nbsp; <a href="">Link Three</a> &nbsp;&nbsp; <a href="">Link Four</a> &nbsp;&nbsp; <a href="">Link Five</a></p>
-		</div>
-		<!-- <div id="leftMenu" class="displayCont">
-			<div>
-				<h2>Links</h2>
-				<p>Item 1</p>
-				<p>Item 2</p>
-				<p>Item 3</p>
-				<p>Item 4</p>
-				<p>Item 5</p>
-			</div>
-		</div> -->
-		
-		<div id="rightBar" class="displayCont">
-			<div id="bannerCycle" style="text-align: center; position: relative; right:50%;">
-				<br>
-				<img src="images/placeholder1.gif" id="adBanner" style="text-align:center; display:inline-block; margin-right:-100%; width:100%;">
-			</div>
-		</div>
-		<div id="mainCont" class="displayCont">
-			<div id="contentWrap">
-				
-				<h2 style="text-align: center;">Main Content</h2>
-
-				<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-				<br>
-				<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum <img src="images\sunrise.jpg" style="float: right; clear: right; width: 300px; height: auto; margin-left: 0px;"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
-			</div>
-		</div>
-		<div id="footer">
-			<p>Footer</p>	
-		</div>
+	<body>
+		<h2>Links</h2>
+		<ul>
+			<li><a href="webLayout.html">Ad Banner</a></li>
+			<li>Link 2</li>
+			<li>Link 3</li>
+		</ul>
 	</body>
 </html>
