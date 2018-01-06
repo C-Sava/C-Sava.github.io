@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Page Layout Trial</title>
+
+		<script type="text/javascript">
+		var index = 0;
+		var imgArray = new Array();
+
+			imgArray[0] = new Image();
+			imgArray[0].src = 'C:/Users/CraigSava/Desktop/acO.jpg';
+
+			imgArray[1] = new Image();
+			imgArray[1].src = 'C:/Users/CraigSava/Desktop/fc5.jpg';
+
+			imgArray[2] = new Image();
+			imgArray[2].src = 'C:/Users/CraigSava/Desktop/anthem.jpg';
+
+		setInterval(function imgBanner(){
+			if(index<3){
+				document.getElementById('adBanner').src = imgArray[index].src;
+				index++;
+				return;
+			} else{
+				index=0;
+			}
+		}, 5000);
+		</script>
+
+		<style>
+			html, body, *{
+				box-sizing: border-box;
+				font-family: sans-serif;
+			}
+			html, body{
+				/*height: 100%;*/
+				padding: 0;
+				margin: 0;
+
+				background-color: grey;
+			}
+			#topBar{
+				height: 11%;
+				width: 100%;
+				background-color: grey;
+
+				text-align: center;
+				margin: 0 auto 0px auto;
+				padding-bottom: 5px;
+				position: relative;
+			}
+			#topBar p{
+				display: inline-block;
+				padding-right: 10px;
+			}
+
+			.displayCont{
+				float: right;
+			}
+			
+			/*Left Side Menu Bar*/
+			#leftMenu{
+				width: 15%;
+				height: 85%;
+				padding-left: 15px;
+				background-color: purple;
+			}
+			#leftMenu h2{
+				text-align: center;
+			}
+			#leftMenu p{
+				line-height: 10px;
+				font-size: 1.25em;
+				padding-left: 20px;
+			}
+			
+			/*Main Content*/
+			#mainCont{
+				width: 55%;
+				padding-left: 5px;
+				/*padding-top: 20px;*/
+			}
+			#mainCont *{
+				margin: 0 auto;
+			}
+			#contentWrap{
+				width: 75%;
+				padding: 0 5px;
+				background-color: rgba(211,211,211,1);
+			}
+			
+			/*Right Info Bar*/
+			#rightBar{
+				width: 30%;
+				overflow: hidden;
+			}
+			
+			/*Footer*/
+			#footer{
+				width: 100%;
+				background-color: grey;
+				margin: 0 auto;
+				text-align: center;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body onload="imgBanner()" style="background-color:rgba(211,211,211,0.75);">
+		<div id="topBar">
+			<h1>Title Here</h1>
+
+			<p>Link One &nbsp;&nbsp; Link Two &nbsp;&nbsp; Link Three &nbsp;&nbsp; Link Four &nbsp;&nbsp; Link Five</p>
+		</div>
+		<!-- <div id="leftMenu" class="displayCont">
+			<div>
+				<h2>Links</h2>
+				<p>Item 1</p>
+				<p>Item 2</p>
+				<p>Item 3</p>
+				<p>Item 4</p>
+				<p>Item 5</p>
+			</div>
+		</div> -->
+		
+		<div id="rightBar" class="displayCont">
+			<div id="bannerCycle" style="text-align: center; position: relative; right:50%;">
+				<br>
+				<img src="C:/Users/CraigSava/Desktop/acO.jpg" id="adBanner" style="text-align:center; display:inline-block; margin-right:-100%; width:100%;">
+			</div>
+		</div>
+		<div id="mainCont" class="displayCont">
+			<div id="contentWrap">
+				
+				<h2 style="text-align: center;">Main Content</h2>
+
+				<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+				<br>
+				<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum <img src="C:\Users\CraigSava\Pictures\sunrise.jpg" style="float: right; clear: right; width: 300px; height: auto; margin-left: 0px;"> lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  </p>
+			</div>
+		</div>
+		<div id="footer">
+			<p>Footer</p>	
+		</div>
+	</body>
+</html>
