@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html onclick="leaving()">
+	<head>
+		<title>I am tryna leave</title>
+	<script type="text/javascript">
+		function leaving(){
+			var newEl = document.createElement('p');	//Creates New Element
+			var newTxt = document.createTextNode('Miss you boo'); //Creats text node to assign to element
+			newEl.appendChild(newTxt);  //Add text to new element
+			document.body.appendChild(newEl);
+		}
+		</script>
+
+		<style>
+			body, html, *{
+				margin: 0px;
+				box-sizing: border-box;
+				font-family: sans-serif;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body style="background-color: red;" onclick="leaving()">
+		<!-- <img src="sunset.jpg"> -->
+		<!-- <h3 style="position: absolute; top: 10px; left: 10px;">Finished on Dec 28, 2017</h3> -->
+	</body>
+</html>
