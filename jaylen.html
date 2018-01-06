@@ -10,8 +10,10 @@
 			var newTxt = document.createTextNode('Miss you boo'); //Creats text node to assign to element
 			newEl.appendChild(newTxt);  //Add text to new element
 			document.body.appendChild(newEl);
-			var ranColor = randomColor();
-			document.body.style.backgroundColor = ranColor;
+			// var ranColor = randomColor();
+			var color = 'hsl(' + Math.round(Math.random() * 359) + ',100%,50%)';
+			document.body.style.backgroundColor = color;
+
 		}
 		</script>
 
