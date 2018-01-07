@@ -1,0 +1,51 @@
+body, html, *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin-left: 15%;
+	background-color: white;
+	height: 100%;
+}
+#sideBarContainer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100%;
+	background-color: white;
+	box-shadow: 5px 0px 10px 1px rgba(110,110,110,0.5);
+	font-family: sans-serif;
+}
+.profilePics{
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	border-radius: 100%;
+}
+.profileTable{
+	display: table;
+}
+.profiles{
+		display: inline-block;
+
+	text-align: center;
+}
+#sideBarContainer p{
+	padding-left: 50px;
+	padding-top: 15px;
+}
+#sideBarContainer h3{
+	padding: 15px 0px 5px 40px;
+	font-weight: 700;
+
+}
+/*Begin Main Content Styling*/
+#bodyContent{
+	margin-left: 10px;
+}
+#search{
+	width: 80%;
+	margin: 0 auto;
+}
