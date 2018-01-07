@@ -40,12 +40,17 @@ body{
 	font-weight: 700;
 
 }
+#searchBar{
+	z-index: 2;
+	width: 100%;
+	background-color: red;
+}
 #search{
 	position: fixed;
 	background-color: white;
 	width: 80%;
 	margin: 0 auto;
-
+	
 }
 /*Begin Main Content Styling*/
 #bodyContent{
