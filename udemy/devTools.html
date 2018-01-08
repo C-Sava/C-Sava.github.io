@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alert, Prompt, Log, Dev Tools</title>
+	</head>
+	<body>
+		<div id="btn">Click Me</div>
+		<div id="btn2">Click Me</div>
+		<script>
+			var myName = ''
+			document.getElementById('btn').addEventListener('click',
+				function() {
+					myName = prompt('What is your name?');
+					console.log(myName)
+				});
+			document.getElementById('btn2').addEventListener('click',
+				function() {
+					console.log(myName)
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comments, Semi-Colons, White Space</title>
+	</head>
+	<body> 
+		<div id="Btn" onclick="alert('Click');">Click Me</div>
+		<div id="btn">Click Me</div>
+		<div id="btn2">Click Me</div>
+		<script>
+			alert('hello world');
+			document.getElementById('btn').addEventListener('click',
+				function() {
+					alert('Clicked\nHello'); //the \n acts as <br>
+				});
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
