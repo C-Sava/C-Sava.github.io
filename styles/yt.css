@@ -1,35 +1,27 @@
-body, html, *{
+html{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	height: 100%;
+}
+*, *:before, *:after{
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 body{
-	margin-left: 15%;
-	background-color: white;
+	margin: 0;
 	height: 100%;
-}
+	background-color: pink;
+} 
+			/*Side Bar*/
 #sideBarContainer{
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 15%;
-	height: 100%;
+	height: 94%;
+	z-index: 1;
+	position: fixed;
+	top: 6%;
 	background-color: #F5F5F5;
-	font-family: sans-serif;
-}
-.profilePics{
-	height: 50px;
-	width: 50px;
-	background-color: red;
-	border-radius: 100%;
-}
-.profileTable{
-	display: table;
-}
-.profiles{
-		display: inline-block;
-
-	text-align: center;
 }
 #sideBarContainer p{
 	padding-left: 50px;
@@ -37,23 +29,29 @@ body{
 }
 #sideBarContainer h3{
 	padding: 15px 0px 5px 40px;
-	font-weight: 700;
 
 }
+			/*Search*/
 #searchBar{
-	z-index: 2;
 	width: 100%;
-	background-color: red;
+	height: 6%;
+	z-index: 2;
+	position: fixed;
+	background-color: #FFF;
 }
 #search{
-	position: fixed;
 	background-color: white;
 	width: 80%;
 	margin: 0 auto;
 	
 }
 /*Begin Main Content Styling*/
-#bodyContent{
-	margin-left: 10px;
+#main{
+	width: 85%;
+	height: 100%;
+	z-index: 0;
+	position: relative;
+	top: 6%;
+	left: 15%;
 	background-color: #FAFAFA;
 }
