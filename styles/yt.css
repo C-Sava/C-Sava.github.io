@@ -38,12 +38,35 @@ body{
 	z-index: 2;
 	position: fixed;
 	background-color: #FFF;
+	text-align: left;
+}
+#searchBar > span{
+	margin: 0 5px;
+}
+#searchBar > table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table, tr, td{
+	/*border: 1px solid black;*/
 }
 #search{
 	background-color: white;
-	width: 80%;
+	width: 50%;
 	margin: 0 auto;
 	
+}
+.yt-icon{
+	color: rgb(230, 230, 230);
+}
+#displaySVG > *{
+	float: right;
+	margin-left: 0px;
+	color: rgb(230, 230, 230);
+}
+#img{
+	border-radius: 100%;
+	margin-left: 10px;
 }
 /*Begin Main Content Styling*/
 #main{
