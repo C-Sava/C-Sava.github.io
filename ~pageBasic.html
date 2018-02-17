@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Page</title>
+		<style>
+			*,
+			*:after,
+			*:before {
+				margin: 0;
+				padding: 0;
+				/* Removes padding behaviour on widths */
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.wrapper{
+				display: flex;
+				flex-flow: row wrap;
+				width: 70%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.wrapper > *{
+				padding: 10px;
+				flex: 1 100%;
+			}
+			.titleBar{
+				background-color: red;
+			}
+			.mainContent{
+				background-color: lightgreen;
+				min-width: 300px;
+				/*float: left;*/
+			}
+			.asideL{
+				background-color: magenta;
+				/*float: left;*/
+			}
+			.asideR{
+				background-color: #d600d6; /*darker magenta*/
+				/*float: left;*/
+			}
+			.footer{
+				/*clear: both;*/
+				background-color: red;
+			}
+			@media all and (max-width: 600px) {
+				.aside{ flex: 1 auto; }
+			}
+			@media all and (min-width: 800px) {
+				.mainContent{ flex: 3 0px; }
+				.asideL{ order: 1; }
+				.mainContent{ order: 2; }
+				.asideR{ order: 3; }
+				.footer{ order: 4; }
+			}
+		</style>
+	</head>
+	<body>	
+			<!-- Content Wrapper -->
+		<div class="wrapper">
+				<!-- Title Bar -->
+				<div class="titleBar">
+					Title Bar
+				</div>
+				<!-- Doc Body -->
+				<div class="mainContent">
+					Main Content
+				</div>
+				<!-- Left Aside -->
+				<div class="asideL aside">
+					Left Aside
+				</div>
+				<!-- Right Aside -->
+				<div class="asideR aside">
+					Right Aside
+				</div>
+				<div class="footer">
+					Footer
+				</div>
+		</div>
+	</body>
+</html>
