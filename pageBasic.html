@@ -26,24 +26,32 @@
 				flex: 1 100%;
 			}
 			.titleBar{
-				background-color: red;
+				background-color: rgba(125,125,125,0.75);
 			}
 			.mainContent{
-				background-color: lightgreen;
+				background-color: rgba(110,110,110,0.25);
 				text-align: left;
+				border-left: 1px solid rgba(110,110,110,0.75);
+				border-right: 1px solid rgba(110,110,110,0.75);
 			}
 			.asideL{
-				background-color: magenta;
+				background-color: rgba(110,110,110,0.25);
 			}
 			.asideR{
-				background-color: magenta; 
+				background-color: rgba(110,110,110,0.25);
 			}
 			.footer{
-				background-color: red;
+				background-color: rgba(125,125,125,0.75);
+			}
+			@media all and (max-width: 599px) {
+				.wrapper{ width: 90%; min-width: 300px; }
+				.mainContent{ border: none; border-bottom: 1px solid black; }
+			}
+			@media all and (min-width: 600px) and (max-width: 799px) {
+				.mainContent{ border: none; border-bottom: 1px solid black; }
 			}
 			@media all and (min-width: 600px) {
 				.aside{ flex: 1 auto; }
-
 			}
 			@media all and (min-width: 800px) {
 				.mainContent{ flex: 3 0px; }
