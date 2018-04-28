@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Learning jQuery</title>
+		<title>Learning AJAX</title>
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,33 +24,14 @@
 			overflow-y:hidden;
 			font-family: sans-serif;
 		}
-		#circle{
-			width: 200px;
-			height: 200px;
-			background-color: green;
-		}
-		#square{
-			width: 300px;
-			height: 300px;
-			background: red;
-			margin-top: 10px;
-		}
 		</style>
 	</head>
 	<body>
 			<h1>Asyncronous Javascript And XML</h1>
 			
-			<div id="square"></div>
-			<div id="circle"></div>
 			<script>
-				$("#circle").click(function(){
-					$(this).animate({
-							width: "300px",
-							height: "300px",
-							borderRadius: "150px",
-							marginLeft: "100px",
-							marginTop: "100px"
-					}, 800);
+				$.get("text.html", function(data){
+					alert(data);
 				});
 			</script>
 	</body>
